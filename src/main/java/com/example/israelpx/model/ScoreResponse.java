@@ -16,4 +16,5 @@ public class ScoreResponse {
         this.combinations = combinations;
     }
 
+
 }

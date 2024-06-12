@@ -15,6 +15,10 @@ public class ScoreController {
     @Autowired
     private ScoreService scoreService;
 
-
+    @PostMapping("/verify")
+    public ResponseEntity<?> verifyScore(@RequestBody ScoreRequest scoreRequest) {
+        int combinations = scoreService.calculateCombinations(scoreRequest.getScore());
+        return ResponseEntity.ok(new ScoreResponse(combinations));
+    }
 
 }
