@@ -13,8 +13,24 @@ public class ScoreService {
         return countCombinations(homeScore) * countCombinations(awayScore);
     }
 
-    private int countCombinations(int score) {
+    public int countCombinations(int score) {
+        if (score < 0) {
+            return 0;
+        }
 
+        int[] combinations = new int[score + 1];
+
+        combinations[0] = 1;
+
+        int[] posivePlays = {3, 6, 7, 8};
+
+        for (int play : posivePlays) {
+            for (int i = play; i <= score; i++) {
+                combinations[i] += combinations[i - play];
+            }
+        }
+
+        return combinations[score];
     }
 }
 
