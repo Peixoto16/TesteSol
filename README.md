@@ -11,12 +11,12 @@
 
 # COMO EXECUTAR A APLICAÇÃO LOCALMENTE
 JAVA JDK 17 INSTALADO
-   - cd <pasta-onde-está-o-projeto>/israelpx
+   - cd <pasta-onde-está-o-projeto>/TesteSol-main
    - mvn spring-boot:run
      Abra seu postman e vá para http://localhost:8080/verify (ou a porta que você configurou, se for diferente).
 
 # ATRAVES DO DOCKER
-   - cd <pasta-onde-está-o-projeto>/israelpx
+   - cd <pasta-onde-está-o-projeto>/TesteSol-main
    - docker build -t teste-studiosol .
    - docker run -p 8080:8080 teste-studiosol 
      Abra seu postman e vá para http://localhost:8080/verify (ou a porta que você configurou, se for diferente).
@@ -76,3 +76,4 @@ JAVA JDK 17 INSTALADO
         1- Considerar apenas as repetiçoes do codigo.
         2- Verificar a complexidade das funçoes metodos proprios da linguagem(Se utilizado)
         3- Ignorar as contastens e utilizar o termo de maior grau
+[TesteSol-main.zip](..%2F..%2F..%2F..%2F..%2FIsrael%2FDownloads%2FTesteSol-main.zip)
