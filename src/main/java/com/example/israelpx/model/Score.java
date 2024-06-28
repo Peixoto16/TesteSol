@@ -1,6 +1,6 @@
 package com.example.israelpx.model;
 
-public class ScoreRequest {
+public class Score {
 
     private String score;
 

@@ -76,4 +76,3 @@ JAVA JDK 17 INSTALADO
         1- Considerar apenas as repetiçoes do codigo.
         2- Verificar a complexidade das funçoes metodos proprios da linguagem(Se utilizado)
         3- Ignorar as contastens e utilizar o termo de maior grau
-[TesteSol-main.zip](..%2F..%2F..%2F..%2F..%2FIsrael%2FDownloads%2FTesteSol-main.zip)

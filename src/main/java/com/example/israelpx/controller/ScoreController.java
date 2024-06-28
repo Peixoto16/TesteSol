@@ -1,7 +1,7 @@
 package com.example.israelpx.controller;
 
-import com.example.israelpx.model.ScoreRequest;
-import com.example.israelpx.model.ScoreResponse;
+import com.example.israelpx.model.Score;
+import com.example.israelpx.dto.ScoreResponse;
 import com.example.israelpx.service.ScoreService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
@@ -16,7 +16,7 @@ public class ScoreController {
     private ScoreService scoreService;
 
     @PostMapping("/verify")
-    public ResponseEntity<ScoreResponse> verifyScore(@RequestBody ScoreRequest scoreRequest) {
+    public ResponseEntity<ScoreResponse> verifyScore(@RequestBody Score scoreRequest) {
         int combinations = scoreService.calculateCombinations(scoreRequest.getScore());
         return ResponseEntity.ok(new ScoreResponse(combinations));
     }

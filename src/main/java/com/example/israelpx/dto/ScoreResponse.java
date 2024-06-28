@@ -1,4 +1,4 @@
-package com.example.israelpx.model;
+package com.example.israelpx.dto;
 
 public class ScoreResponse {
 

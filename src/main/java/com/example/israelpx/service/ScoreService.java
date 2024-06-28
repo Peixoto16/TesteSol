@@ -6,9 +6,11 @@ import java.util.HashMap;
 import java.util.Map;
 
 @Service
-public class ScoreService {
+public class ScoreService implements ServiceInter {
 
     private final Map<Integer, Integer> cache = new HashMap<>();
+
+    @Override
     public int calculateCombinations(String score) {
         String[] parts = score.split("x");
         int homeScore = Integer.parseInt(parts[0]);
@@ -17,6 +19,7 @@ public class ScoreService {
         return countCombinations(homeScore) * countCombinations(awayScore);
     }
 
+    @Override
     public int countCombinations(int score) {
         if (score < 0) {
             return 0;
